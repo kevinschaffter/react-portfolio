@@ -1,0 +1,38 @@
+.container {
+  background: #efb640;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  max-width: 100%;
+}
+.imageContainer {
+  height: 100vh;
+  flex: 1;
+  background-image: url('../../images/test.jpg');
+  background-size: cover;
+}
+h2 {
+  margin-top: 20px;
+  color: #fff;
+}
+.about {
+  max-width: 45%;
+  padding: 30px 40px 0px 40px;
+}
+
+.imgCrop {
+  overflow: hidden;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  margin-left: 195px;
+}
+.imgCrop > img {
+  margin: 0 auto;
+  height: 119%;
+  right: 36px;
+  bottom: 9px;
+  position: relative;
+  width: auto;
+  filter: grayscale(100%);
+}

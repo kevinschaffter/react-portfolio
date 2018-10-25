@@ -30,8 +30,7 @@ $shadows-medium: multiple-box-shadow(200);
 $shadows-big: multiple-box-shadow(100);
 
 .parallax {
-  position: fixed;
-  z-index: 1;
+  margin-right: auto;
 
   #stars1 {
     width: 1px;

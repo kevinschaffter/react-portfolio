@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import classes from './Landing.module.css';
 import Typed from 'typed.js';
+import { Background } from '../../components';
 
 class Landing extends Component {
   componentDidMount() {
-    const { strings } = this.props;
-    // You can pass other options here, such as typing speed, back speed, etc.
     const options = {
       strings: ['Web Applications', 'User Interfaces', 'React Apps', 'Time Machines', 'Fun Web Things'],
       typeSpeed: 60,
@@ -17,19 +16,21 @@ class Landing extends Component {
   render() {
     return (
       <div className={classes.container}>
+        <Background />
         <div className={classes.textWrapper}>
           <h1>Hi, I'm Kevin.</h1>
           <div className={classes.subheader}>
-            <h2>
+            <h3>
               I Build{' '}
               <span
-                // style={{ whiteSpace: 'pre' }}
                 ref={el => {
                   this.el = el;
                 }}
               />
-            </h2>
+            </h3>
           </div>
+          <hr />
+          <h4>Miami Based Software Engineer</h4>
         </div>
       </div>
     );

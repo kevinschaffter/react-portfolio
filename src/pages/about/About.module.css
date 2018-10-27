@@ -10,6 +10,15 @@
   flex: 1;
   background-image: url('../../images/test.jpg');
   background-size: cover;
+  animation: fadeIn 1s forwards;
+  opacity: 0;
+}
+.textContainer {
+  opacity: 0;
+  margin-bottom: 35px;
+}
+.fadeIn {
+  animation: fadeIn 1s forwards;
 }
 h2 {
   margin-top: 20px;
@@ -17,7 +26,9 @@ h2 {
 }
 .about {
   max-width: 45%;
-  padding: 30px 40px 0px 40px;
+  padding: 30px 0px 0px 40px;
+  display: flex;
+  flex-direction: column;
 }
 
 .imgCrop {
@@ -35,4 +46,13 @@ h2 {
   position: relative;
   width: auto;
   filter: grayscale(100%);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

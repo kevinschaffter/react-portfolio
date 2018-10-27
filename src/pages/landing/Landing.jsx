@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import classes from './Landing.module.css';
 import Typed from 'typed.js';
 import { Background } from '../../components';
+import { Fade } from 'react-reveal';
 
 class Landing extends Component {
   componentDidMount() {
@@ -14,24 +15,30 @@ class Landing extends Component {
     this.typed = new Typed(this.el, options);
   }
   render() {
+    const { handleMoreClick } = this.props;
     return (
       <div className={classes.container}>
         <Background />
-        <div className={classes.textWrapper}>
-          <h1>Hi, I'm Kevin.</h1>
-          <div className={classes.subheader}>
-            <h3>
-              I Build{' '}
-              <span
-                ref={el => {
-                  this.el = el;
-                }}
-              />
-            </h3>
+        <Fade>
+          <div className={classes.textWrapper}>
+            <h1>Hi, I'm Kevin.</h1>
+            <div className={classes.subheader}>
+              <h3>
+                I Build{' '}
+                <span
+                  ref={el => {
+                    this.el = el;
+                  }}
+                />
+              </h3>
+            </div>
+            <hr />
+            <h4>Miami Based Software Engineer</h4>
+            <div onClick={handleMoreClick} className={classes.moreBtn}>
+              Learn More
+            </div>
           </div>
-          <hr />
-          <h4>Miami Based Software Engineer</h4>
-        </div>
+        </Fade>
       </div>
     );
   }

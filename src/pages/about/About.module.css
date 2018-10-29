@@ -5,6 +5,14 @@
   display: flex;
   max-width: 100%;
 }
+.bioInfo h4 {
+  color: #fff;
+  font-weight: 800;
+  text-align: left;
+}
+p {
+  margin: 3px;
+}
 .imageContainer {
   height: 100vh;
   flex: 1;
@@ -30,24 +38,6 @@ h2 {
   display: flex;
   flex-direction: column;
 }
-
-.imgCrop {
-  overflow: hidden;
-  border-radius: 50%;
-  height: 200px;
-  width: 200px;
-  margin-left: 195px;
-}
-.imgCrop > img {
-  margin: 0 auto;
-  height: 119%;
-  right: 36px;
-  bottom: 9px;
-  position: relative;
-  width: auto;
-  filter: grayscale(100%);
-}
-
 @keyframes fadeIn {
   from {
     opacity: 0;

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Landing, About } from './';
+import { Landing, About, Portfolio } from './';
 import { Header, Footer, Background } from '../components/';
 
 export default class AppRoot extends Component {
@@ -19,9 +19,9 @@ export default class AppRoot extends Component {
             this.about = ref;
           }}
         />
-        <About />
+        <About handleMoreClick={this.handleMoreClick} />
+        <Portfolio />
         {/* <Footer /> */}
-        {/* <Background /> */}
       </>
     );
   }

@@ -1,0 +1,56 @@
+.container {
+  width: 94%;
+  align-self: center;
+  margin-top: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container svg {
+  color: #fff;
+  font-size: 40px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.container svg:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.contentContainer {
+  align-self: center;
+  margin-top: 15px;
+  height: 200px;
+  background: rgba(112, 112, 112, 0.15);
+  border-radius: 5px;
+  padding: 17px 0px 15px 23px;
+  overflow: hidden;
+}
+.menuContainer {
+  width: 80%;
+}
+.arrow {
+  opacity: 0;
+  transition: 0.5s;
+}
+.visible {
+  opacity: 1;
+  transition: 0.5s;
+}
+.slider {
+  display: flex;
+  transition: 0.7s;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+.active {
+  opacity: unset !important;
+}
+.menuItem {
+  height: 4px;
+  width: 30%;
+  background-color: #fff;
+  opacity: 0.3;
+  cursor: pointer;
+}

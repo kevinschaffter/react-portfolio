@@ -1,0 +1,7 @@
+.container {
+  background: gray;
+  height: 50vh;
+  width: 100vw;
+  display: flex;
+  max-width: 100%;
+}

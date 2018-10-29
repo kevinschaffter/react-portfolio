@@ -12,7 +12,7 @@ const Icons = _ => {
   return (
     <div className={classes.logoContainer}>
       {logoInfo.map(({ icon, text }, i) => (
-        <Fade left delay={`${i * 250}`}>
+        <Fade down delay={`${i * 200}`}>
           <div>
             <FontAwesomeIcon icon={icon} />
             <p>{text}</p>

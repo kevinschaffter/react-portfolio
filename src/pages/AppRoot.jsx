@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import { Landing, About, Portfolio } from './';
+import { Landing, About, Portfolio, Contact } from './';
 import { Header, Footer, Background } from '../components/';
 
 export default class AppRoot extends Component {
-  handleMoreClick = _ => {
-    this.about.scrollIntoView({
+  handleMoreClick = page => {
+    this[page].scrollIntoView({
       behavior: 'smooth',
       block: 'start'
     });
@@ -20,7 +20,13 @@ export default class AppRoot extends Component {
           }}
         />
         <About handleMoreClick={this.handleMoreClick} />
+        <span
+          ref={ref => {
+            this.portfolio = ref;
+          }}
+        />
         <Portfolio />
+        <Contact />
         {/* <Footer /> */}
       </>
     );

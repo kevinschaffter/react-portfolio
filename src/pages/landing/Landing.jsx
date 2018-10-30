@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import classes from './Landing.module.css';
 import Typed from 'typed.js';
 import { Background } from '../../components';
 import { Fade } from 'react-reveal';
 
-class Landing extends Component {
+class Landing extends PureComponent {
   componentDidMount() {
     const options = {
       strings: ['Web Applications', 'User Interfaces', 'React Apps', 'Time Machines', 'Fun Web Things'],
@@ -34,7 +34,7 @@ class Landing extends Component {
             </div>
             <hr />
             <h4>Miami Based Software Engineer</h4>
-            <div onClick={handleMoreClick} className={classes.moreBtn}>
+            <div onClick={_ => handleMoreClick('about')} className={classes.moreBtn}>
               Learn More
             </div>
           </div>

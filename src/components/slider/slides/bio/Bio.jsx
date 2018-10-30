@@ -8,13 +8,13 @@ const Bio = _ => {
       <div className={classes.contentContainer}>
         <div className={classes.labels}>
           <p>Citizenship:</p>
-          <p>Language:</p>
           <p>Place of birth:</p>
+          <p>Language:</p>
         </div>
         <div className={classes.text}>
           <p>American, Canadian &amp; Thai</p>
-          <p>English &amp; Spanish (basic working proficiency)</p>
           <p>Bangkok, Thailand</p>
+          <p>English &amp; Spanish (basic working proficiency)</p>
         </div>
       </div>
     </div>

@@ -1,7 +1,6 @@
 .container {
   width: 94%;
   align-self: center;
-  margin-top: 55px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -9,7 +8,6 @@
 .container svg {
   color: #fff;
   font-size: 40px;
-  cursor: pointer;
   transition: 0.5s;
 }
 .container svg:hover {
@@ -19,13 +17,14 @@
 .contentContainer {
   align-self: center;
   margin-top: 15px;
-  height: 200px;
+  height: fit-content;
   background: rgba(112, 112, 112, 0.15);
   border-radius: 5px;
   padding: 17px 0px 15px 23px;
   overflow: hidden;
 }
 .menuContainer {
+  /* min-width: 486px; */
   width: 80%;
 }
 .arrow {
@@ -35,6 +34,7 @@
 .visible {
   opacity: 1;
   transition: 0.5s;
+  cursor: pointer;
 }
 .slider {
   display: flex;

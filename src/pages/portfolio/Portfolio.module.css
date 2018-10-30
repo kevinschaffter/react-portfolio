@@ -1,7 +1,56 @@
 .container {
-  background: gray;
-  height: 50vh;
+  background: #34495e;
+  height: fit-content;
   width: 100vw;
-  display: flex;
+  display: grid;
   max-width: 100%;
+  padding: 60px;
+}
+.container h3 {
+  margin: 0px 0px 65px 0px;
+  text-align: center;
+}
+.contentContainer > div {
+  border-radius: 7px;
+  height: 370px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+.breezeContainer {
+  background: #fff;
+  overflow: hidden;
+  display: flex;
+  height: 300px;
+  width: 450px;
+  border-radius: 7px;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px;
+}
+.breezeContainer img {
+  height: 70%;
+}
+.imgCrop {
+  overflow: hidden;
+  display: flex;
+  height: 300px;
+  width: 450px;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px;
+  border-radius: 7px;
+}
+.imgCrop img {
+  height: 100%;
+  border-radius: 7px;
+}
+.contentContainer {
+  display: grid;
+  justify-content: space-around;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minMax(450px, 1fr));
+  grid-column-gap: 80px;
+  grid-row-gap: 80px;
 }

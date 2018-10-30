@@ -19,7 +19,7 @@ class Slider extends Component {
         <div className={classes.container}>
           <FontAwesomeIcon
             icon={faArrowCircleLeft}
-            onClick={_ => this.handleMenuClick(step - 1)}
+            onClick={_ => step && this.handleMenuClick(step - 1)}
             className={classnames(classes.arrow, { [classes.visible]: step })}
           />
           <div className={classes.menuContainer}>
@@ -40,7 +40,7 @@ class Slider extends Component {
           </div>
           <FontAwesomeIcon
             icon={faArrowCircleRight}
-            onClick={_ => this.handleMenuClick(step + 1)}
+            onClick={_ => step < keys.length - 1 && this.handleMenuClick(step + 1)}
             className={classnames(classes.arrow, { [classes.visible]: step < keys.length - 1 })}
           />
         </div>

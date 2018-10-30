@@ -23,7 +23,6 @@ p {
 }
 .textContainer {
   opacity: 0;
-  margin-bottom: 35px;
 }
 .fadeIn {
   animation: fadeIn 1s forwards;
@@ -37,6 +36,19 @@ h2 {
   padding: 30px 0px 0px 40px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+}
+.portfolioMore {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 35px;
+  cursor: pointer;
+}
+.portfolioMore svg {
+  color: #fff;
+  font-size: 25px;
 }
 @keyframes fadeIn {
   from {

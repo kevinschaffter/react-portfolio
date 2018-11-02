@@ -19,25 +19,43 @@
   align-items: center;
 }
 .overlay {
+  display: flex;
+  flex-direction: column;
   height: 100%;
   width: 100%;
-  background-color: black;
-  opacity: 0;
+  background-color: rgba(0, 0, 0, 0);
   transition: 0.5s;
   position: absolute;
   z-index: 10;
+  opacity: 0;
+  padding: 28px;
+}
+.overlay div {
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+  align-self: center;
+  opacity: 0;
+  transform: translateX(-35px);
+}
+.overlay svg {
+  color: #fff;
 }
 .breezeContainer > img {
   transition: 0.5s;
 }
 .breezeContainer:hover > div {
-  opacity: 0.8;
   transition: 0.5s;
   z-index: 10;
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 .breezeContainer:hover > img {
   transform: scale(1.1);
   transition: 0.7s;
+}
+.breezeContainer:hover > div > div:last-of-type {
+  animation: slideIn 0.7s forwards;
 }
 .breezeContainer {
   background: #fff;
@@ -63,10 +81,22 @@
   align-items: center;
   padding: 0px 20px;
   border-radius: 7px;
+  position: relative;
 }
 .imgCrop img {
   height: 100%;
   border-radius: 7px;
+  transition: 0.5s;
+}
+.imgCrop:hover > div {
+  opacity: 1;
+  transition: 0.5s;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.imgCrop:hover > img {
+  transform: scale(1.1);
+  transition: 0.7s;
 }
 .contentContainer {
   display: grid;
@@ -75,4 +105,14 @@
   grid-template-columns: repeat(auto-fit, minMax(450px, 1fr));
   grid-column-gap: 80px;
   grid-row-gap: 80px;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }

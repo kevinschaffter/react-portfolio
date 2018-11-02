@@ -1,12 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
 import classes from './About.module.css';
 import { Icons, Education, Work, Slider, Bio } from '../../components/index';
 import { Fade } from 'react-reveal';
-import { faArrowCircleDown, faArrowDown } from '@fortawesome/free-solid-svg-icons';
+import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-const About = ({ handleMoreClick }) => {
+const About = ({ handleMoreClick, setRef }) => {
   return (
-    <div className={classes.container}>
+    <div
+      ref={ref => {
+        setRef({ ref, page: 'about' });
+      }}
+      className={classes.container}
+    >
       <div className={classes.about}>
         <Fade delay={100}>
           <div className={classes.textContainer}>

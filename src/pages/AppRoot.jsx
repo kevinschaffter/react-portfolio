@@ -9,23 +9,16 @@ export default class AppRoot extends Component {
       block: 'start'
     });
   };
+  setRef = ({ ref, page }) => {
+    this[page] = ref;
+  };
   render() {
     return (
       <>
         {/* <Header /> */}
         <Landing handleMoreClick={this.handleMoreClick} />
-        <span
-          ref={ref => {
-            this.about = ref;
-          }}
-        />
-        <About handleMoreClick={this.handleMoreClick} />
-        <span
-          ref={ref => {
-            this.portfolio = ref;
-          }}
-        />
-        <Portfolio />
+        <About setRef={this.setRef} handleMoreClick={this.handleMoreClick} />
+        <Portfolio setRef={this.setRef} />
         <Contact />
         {/* <Footer /> */}
       </>

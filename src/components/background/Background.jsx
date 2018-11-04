@@ -11,6 +11,7 @@ const ParallaxBackground = (props, context) => {
       <div id="stars1" />
       <div id="stars2" />
       <div id="stars3" />
+      <div id="stars1" />
     </div>
   );
 };

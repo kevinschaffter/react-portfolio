@@ -19,8 +19,6 @@ class Landing extends PureComponent {
     return (
       <div className={classes.container}>
         <Background />
-        <Background />
-
         <Fade>
           <div className={classes.textWrapper}>
             <h1>Hi, I'm Kevin.</h1>

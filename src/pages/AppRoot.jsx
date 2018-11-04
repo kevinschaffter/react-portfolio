@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import { Landing, About, Portfolio, Contact } from './';
-import { Header, Footer, Background } from '../components/';
-
 export default class AppRoot extends Component {
   handleMoreClick = page => {
     this[page].scrollIntoView({
@@ -15,12 +13,10 @@ export default class AppRoot extends Component {
   render() {
     return (
       <>
-        {/* <Header /> */}
         <Landing handleMoreClick={this.handleMoreClick} />
         <About setRef={this.setRef} handleMoreClick={this.handleMoreClick} />
         <Portfolio setRef={this.setRef} />
         <Contact />
-        {/* <Footer /> */}
       </>
     );
   }

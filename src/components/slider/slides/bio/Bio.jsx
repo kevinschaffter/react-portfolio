@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './Bio.module.css';
+import classes from './Bio.module.scss';
 
 const Bio = _ => {
   return (

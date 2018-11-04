@@ -1,13 +1,13 @@
 import React, { PureComponent } from 'react';
-import classes from './Landing.module.css';
+import classes from './Landing.module.scss';
 import Typed from 'typed.js';
-import { Background } from '../../components';
+import { Background, Button } from '../../components';
 import { Fade } from 'react-reveal';
 
 class Landing extends PureComponent {
   componentDidMount() {
     const options = {
-      strings: ['Web Applications', 'User Interfaces', 'React Apps', 'Time Machines', 'Fun Web Things'],
+      strings: ['Web Applications', 'User Interfaces', 'React Applications', 'Time Machines', 'Fun Web Things'],
       typeSpeed: 60,
       backSpeed: 35,
       loop: true
@@ -19,6 +19,8 @@ class Landing extends PureComponent {
     return (
       <div className={classes.container}>
         <Background />
+        <Background />
+
         <Fade>
           <div className={classes.textWrapper}>
             <h1>Hi, I'm Kevin.</h1>
@@ -34,9 +36,7 @@ class Landing extends PureComponent {
             </div>
             <hr />
             <h4>Miami Based Software Engineer</h4>
-            <div onClick={_ => handleMoreClick('about')} className={classes.moreBtn}>
-              Learn More
-            </div>
+            <Button onClick={_ => handleMoreClick('about')}>Learn More</Button>
           </div>
         </Fade>
       </div>

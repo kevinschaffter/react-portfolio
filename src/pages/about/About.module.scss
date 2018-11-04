@@ -1,25 +1,30 @@
+@import '../../utilities/scss_variables.scss';
+
 .container {
-  background: #efb640;
+  background: $primary;
   height: 100vh;
   width: 100vw;
   display: flex;
   max-width: 100%;
+  p {
+    margin: 3px;
+  }
+  h2 {
+    margin-top: 20px;
+    color: #fff;
+  }
 }
 .bioInfo h4 {
   color: #fff;
   font-weight: 800;
   text-align: left;
 }
-p {
-  margin: 3px;
-}
 .imageContainer {
   height: 100vh;
   flex: 1;
-  background-image: url('../../images/test.jpg');
+  background-image: url('../../images/computer.svg');
   background-size: cover;
-  animation: fadeIn 1s forwards;
-  opacity: 0;
+  // opacity: 0;
 }
 .textContainer {
   opacity: 0;
@@ -27,12 +32,9 @@ p {
 .fadeIn {
   animation: fadeIn 1s forwards;
 }
-h2 {
-  margin-top: 20px;
-  color: #fff;
-}
 .about {
   max-width: 45%;
+  min-width: 700px;
   padding: 30px 0px 0px 40px;
   display: flex;
   flex-direction: column;
@@ -45,16 +47,8 @@ h2 {
   align-items: center;
   margin-bottom: 35px;
   cursor: pointer;
-}
-.portfolioMore svg {
-  color: #fff;
-  font-size: 25px;
-}
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
+  svg {
+    color: #fff;
+    font-size: 25px;
   }
 }

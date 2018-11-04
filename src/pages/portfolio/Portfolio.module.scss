@@ -1,0 +1,137 @@
+.container {
+  background: #34495e;
+  height: fit-content;
+  width: 100vw;
+  display: grid;
+  max-width: 100%;
+  padding: 60px;
+  cursor: pointer;
+  h3 {
+    margin: 0px 0px 65px 0px;
+    text-align: center;
+  }
+}
+.carecloudLogo {
+  width: 240px;
+  align-self: center;
+}
+.visitBtn {
+  margin-top: auto;
+}
+.overlay {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  transition: 0.5s;
+  position: absolute;
+  z-index: 10;
+  opacity: 0;
+  padding: 17px 21px 21px 21px;
+  p {
+    line-height: 26.5px;
+    font-weight: 800;
+  }
+  div:last-of-type {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    opacity: 0;
+    transform: translateX(-35px);
+  }
+  svg {
+    color: #fff;
+  }
+}
+.breezeContainer {
+  background: #fafafa;
+  overflow: hidden;
+  display: flex;
+  height: 300px;
+  width: 450px;
+  border-radius: 7px;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px;
+  position: relative;
+  > img {
+    transition: 0.5s;
+    height: 70%;
+  }
+  &:hover > div {
+    transition: 0.5s;
+    z-index: 10;
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  &:hover > img {
+    transform: scale(1.1);
+    transition: 0.7s;
+  }
+  &:hover > div > div:last-of-type {
+    animation: slideIn 0.7s forwards;
+  }
+}
+.imgCrop {
+  overflow: hidden;
+  display: flex;
+  height: 300px;
+  width: 450px;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px;
+  border-radius: 7px;
+  position: relative;
+  img {
+    width: 450px;
+    border-radius: 7px;
+    transition: 0.5s;
+  }
+  &:hover > div {
+    opacity: 1;
+    transition: 0.5s;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  &:hover > div > div:last-of-type {
+    animation: slideIn 0.7s forwards;
+  }
+  &:hover > img {
+    transform: scale(1.1);
+    transition: 0.7s;
+  }
+}
+.pitchDay {
+  display: flex;
+  align-items: center;
+  margin-top: 7px;
+  svg {
+    margin-right: 5px;
+  }
+}
+.contentContainer {
+  display: grid;
+  justify-content: space-around;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minMax(450px, 1fr));
+  grid-column-gap: 80px;
+  grid-row-gap: 80px;
+  > div {
+    border-radius: 7px;
+    height: 370px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@keyframes slideIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}

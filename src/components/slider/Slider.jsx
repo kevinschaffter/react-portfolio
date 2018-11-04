@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import classes from './Slider.module.css';
+import classes from './Slider.module.scss';
 import { Fade } from 'react-reveal';
 import classnames from 'classnames';
 import { faArrowCircleLeft, faArrowCircleRight } from '@fortawesome/free-solid-svg-icons';

@@ -1,18 +1,20 @@
 .container {
-  width: 94%;
+  max-width: 750px;
   align-self: center;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-}
-.container svg {
-  color: #fff;
-  font-size: 40px;
-  transition: 0.5s;
-}
-.container svg:hover {
-  transform: scale(1.1);
-  transition: 0.5s;
+  p {
+    color: #fff;
+  }
+  svg {
+    color: #fff;
+    font-size: 40px;
+    transition: 0.5s;
+    &:hover {
+      transform: scale(1.1);
+      transition: 0.5s;
+    }
+  }
 }
 .contentContainer {
   align-self: center;
@@ -20,12 +22,12 @@
   height: fit-content;
   background: rgba(112, 112, 112, 0.15);
   border-radius: 5px;
-  padding: 17px 0px 15px 23px;
+  padding: 17px 0 5px 23px;
   overflow: hidden;
 }
 .menuContainer {
-  /* min-width: 486px; */
   width: 80%;
+  margin: 0 20px;
 }
 .arrow {
   opacity: 0;

@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './Education.module.css';
+import classes from './Education.module.scss';
 import { iu, wyncode, yale } from '../../../../images';
 
 const Education = _ => {
@@ -10,7 +10,7 @@ const Education = _ => {
         <div className={classes.imageCrop}>
           <img className={classes.image} src={wyncode} alt="" />
         </div>
-        <p>Wyncode Academy - Web Immersive</p>
+        <p>Wyncode Academy - Web Development</p>
       </div>
       <div>
         <div className={classes.imageCrop}>

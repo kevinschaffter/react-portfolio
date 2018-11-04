@@ -1,22 +1,17 @@
-import { faJs, faReact, faNodeJs, faHtml5, faCss3 } from '@fortawesome/free-brands-svg-icons';
 import React from 'react';
-import classes from './Icons.module.css';
+import classes from './Icons.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Fade } from 'react-reveal';
 
-const logos = [faJs, faReact, faNodeJs, faHtml5, faCss3];
-const text = ['JavaScript', 'React.js', 'Node.js', 'HTML', 'CSS'];
-const logoInfo = logos.reduce((acc, icon, i) => acc.concat({ icon, text: text[i] }), []);
-
-const Icons = _ => {
+const Icons = ({ iconInfo, stagger, delay, ...animation }) => {
   return (
     <div className={classes.logoContainer}>
-      {logoInfo.map(({ icon, text }, i) => (
-        <Fade down delay={`${i * 200}`}>
-          <div>
+      {iconInfo.map(({ icon, text, link }, i) => (
+        <Fade {...animation} delay={stagger ? `${i * 200}` : delay} style={link && { cursor: 'pointer' }}>
+          <a href={link} target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={icon} />
-            <p>{text}</p>
-          </div>
+            <h4>{text}</h4>
+          </a>
         </Fade>
       ))}
     </div>

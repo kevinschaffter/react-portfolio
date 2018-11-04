@@ -1,0 +1,56 @@
+@import '../../utilities/scss_variables.scss';
+
+.btn {
+  border: 3px solid $primary;
+  border-radius: 3rem;
+  width: 180px;
+  height: 50px;
+  align-self: center;
+  margin-top: 24px;
+  color: #fff;
+  font-family: 'Open Sans';
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 800;
+  overflow: hidden;
+  padding: 1rem 2rem;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.2s transform ease-in-out;
+  will-change: transform;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    border: 2px solid transparent;
+    color: #fff;
+    transform: scale(1.05);
+    will-change: transform;
+  }
+  &::after {
+    background-color: $primary;
+    border-radius: 3rem;
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-100%, 0) rotate(10deg);
+    transform-origin: top left;
+    transition: 0.2s transform ease-out;
+    will-change: transform;
+    z-index: -1;
+  }
+  &:hover::after {
+    transform: translate(0, 0);
+  }
+}
+.small {
+  width: 140px;
+  height: 40px;
+  padding: 5px 5px;
+}

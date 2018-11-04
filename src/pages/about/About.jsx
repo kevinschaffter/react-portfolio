@@ -1,7 +1,8 @@
 import React from 'react';
-import classes from './About.module.css';
+import classes from './About.module.scss';
 import { Icons, Education, Work, Slider, Bio } from '../../components/index';
 import { Fade } from 'react-reveal';
+import { iconInfo } from './IconInfo';
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const About = ({ handleMoreClick, setRef }) => {
@@ -22,7 +23,7 @@ const About = ({ handleMoreClick, setRef }) => {
             </h3>
           </div>
         </Fade>
-        <Icons />
+        <Icons iconInfo={iconInfo} stagger down />
         <Slider>
           <Work />
           <Education />
@@ -30,12 +31,13 @@ const About = ({ handleMoreClick, setRef }) => {
         </Slider>
         <Fade delay={1200}>
           <div className={classes.portfolioMore} onClick={_ => handleMoreClick('portfolio')}>
-            <h4>PORTFOLIO</h4>
             <FontAwesomeIcon icon={faArrowDown} />
           </div>
         </Fade>
       </div>
-      <div className={classes.imageContainer} />
+      <Fade>
+        <div className={classes.imageContainer} />
+      </Fade>
     </div>
   );
 };

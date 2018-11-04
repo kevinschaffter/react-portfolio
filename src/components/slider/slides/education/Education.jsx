@@ -10,19 +10,25 @@ const Education = _ => {
         <div className={classes.imageCrop}>
           <img className={classes.image} src={wyncode} alt="" />
         </div>
-        <p>Wyncode Academy - Web Development</p>
+        <p>
+          <span>Wyncode Academy</span> - Web Development
+        </p>
       </div>
       <div>
         <div className={classes.imageCrop}>
           <img className={classes.image} src={yale} alt="" />
         </div>
-        <p>Yale University - MMus</p>
+        <p>
+          <span>Yale University</span> - Master's in Music
+        </p>
       </div>
       <div>
         <div className={classes.imageCrop}>
           <img className={classes.image} src={iu} alt="" />
         </div>
-        <p>Indiana University - BMus</p>
+        <p>
+          <span>Indiana University</span> - Bachelor's in Music
+        </p>
       </div>
     </div>
   );

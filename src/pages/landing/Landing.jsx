@@ -3,8 +3,10 @@ import classes from './Landing.module.scss';
 import Typed from 'typed.js';
 import { Background, Button } from '../../components';
 import { Fade } from 'react-reveal';
-
 class Landing extends PureComponent {
+  get buttonStyle() {
+    return this.props.isSafari && { style: { fontSize: 15.5 } };
+  }
   componentDidMount() {
     const options = {
       strings: ['Web Applications', 'User Interfaces', 'React Applications', 'Time Machines', 'Fun Web Things'],
@@ -34,7 +36,9 @@ class Landing extends PureComponent {
             </div>
             <hr />
             <h4>Miami Based Software Engineer</h4>
-            <Button onClick={_ => handleMoreClick('about')}>Learn More</Button>
+            <Button {...this.buttonStyle} onClick={_ => handleMoreClick('about')}>
+              Learn More
+            </Button>
           </div>
         </Fade>
       </div>

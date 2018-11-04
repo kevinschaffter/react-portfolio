@@ -18,8 +18,8 @@ const About = ({ handleMoreClick, setRef }) => {
           <div className={classes.textContainer}>
             <h1>Hi!</h1>
             <h3>
-              I have a passion for crispy clean, beautiful web design that leads to results and a great user experience.
-              I work primarily in JavaScript and specialize in React.js.
+              I have a passion for crispy clean code and beautiful web design that leads to a great user experience. I
+              work primarily in JavaScript and specialize in React.js.
             </h3>
           </div>
         </Fade>

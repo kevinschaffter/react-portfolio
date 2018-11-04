@@ -1,14 +1,15 @@
 import React from 'react';
 import classes from './Portfolio.module.scss';
+import classnames from 'classnames';
 import { breeze, acafe, maze, carecloud } from '../../images';
 import { Fade } from 'react-reveal';
 import { Button } from '../../components';
 import { faAward } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const Portfolio = ({ setRef }) => (
+const Portfolio = ({ setRef, isSafari }) => (
   <div
-    className={classes.container}
+    className={classnames(classes.container, { [classes.safari]: isSafari })}
     ref={ref => {
       setRef({ ref, page: 'portfolio' });
     }}

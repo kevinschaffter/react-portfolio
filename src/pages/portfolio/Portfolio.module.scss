@@ -126,6 +126,12 @@
     align-items: center;
   }
 }
+.safari {
+  height: unset;
+  p {
+    font-size: 16px;
+  }
+}
 @keyframes slideIn {
   from {
     opacity: 0;

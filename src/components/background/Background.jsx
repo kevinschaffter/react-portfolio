@@ -1,17 +1,12 @@
 import React from 'react';
 import './style.scss';
 
-const ParallaxBackground = (props, context) => {
-  //   const {
-  //     theme: { colorPrimary }
-  //   } = context;
-
+const ParallaxBackground = _ => {
   return (
-    <div className="parallax" style={{ color: 'white' }}>
+    <div className="parallax">
       <div id="stars1" />
       <div id="stars2" />
       <div id="stars3" />
-      <div id="stars1" />
     </div>
   );
 };

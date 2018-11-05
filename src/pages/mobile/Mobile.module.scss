@@ -1,0 +1,16 @@
+@import '../../utilities/scss_variables.scss';
+
+.container {
+  position: absolute;
+  padding: 20px 35px;
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  background: $landing;
+  z-index: 100;
+  text-align: center;
+  h3 {
+    font-size: 30px;
+    margin-bottom: 35px;
+  }
+}

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Landing, About, Portfolio, Contact } from './';
+import { Landing, About, Portfolio, Contact, Mobile } from './';
 
 export default class AppRoot extends Component {
   get isSafari() {
@@ -14,13 +14,20 @@ export default class AppRoot extends Component {
   setRef = ({ ref, page }) => {
     this[page] = ref;
   };
+  isMobileDevice = _ => typeof window.orientation !== 'undefined' || navigator.userAgent.includes('IEMobile');
   render() {
     return (
       <>
-        <Landing handleMoreClick={this.handleMoreClick} isSafari={this.isSafari} />
-        <About setRef={this.setRef} handleMoreClick={this.handleMoreClick} />
-        <Portfolio setRef={this.setRef} isSafari={this.isSafari} />
-        <Contact />
+        {this.isMobileDevice() ? (
+          <Mobile />
+        ) : (
+          <>
+            <Landing handleMoreClick={this.handleMoreClick} isSafari={this.isSafari} />
+            <About setRef={this.setRef} handleMoreClick={this.handleMoreClick} />
+            <Portfolio setRef={this.setRef} isSafari={this.isSafari} />
+            <Contact />
+          </>
+        )}
       </>
     );
   }

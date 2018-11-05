@@ -1,5 +1,7 @@
+@import '../../utilities/scss_variables.scss';
+
 .container {
-  background: #3498db;
+  background: $landing;
   height: 100vh;
   width: 100vw;
   display: flex;

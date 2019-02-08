@@ -9,7 +9,7 @@ const Work = _ => {
       <div>
         <img className={classes.logo} src={carecloudSquare} alt="" />
         <div className={classes.infoContainer}>
-          <p>CareCloud - Associate Software Engineer</p>
+          <p>CareCloud - Associate Software Engineer II</p>
           <p>App development utilizing React and GraphQL</p>
         </div>
       </div>

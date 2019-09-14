@@ -18,7 +18,7 @@ export default class AppRoot extends Component {
   render() {
     return (
       <>
-        {this.isMobileDevice() ? (
+        {false ? (
           <Mobile />
         ) : (
           <>

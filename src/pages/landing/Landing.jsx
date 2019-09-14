@@ -35,7 +35,7 @@ class Landing extends PureComponent {
               </h3>
             </div>
             <hr />
-            <h4>Miami Based Software Engineer</h4>
+            <h4>Frontend Software Engineer</h4>
             <Button {...this.buttonStyle} onClick={_ => handleMoreClick('about')}>
               Learn More
             </Button>

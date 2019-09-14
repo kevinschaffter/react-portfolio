@@ -5,6 +5,7 @@ import { Fade } from 'react-reveal';
 import { iconInfo } from './IconInfo';
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 const About = ({ handleMoreClick, setRef }) => {
   return (
     <div

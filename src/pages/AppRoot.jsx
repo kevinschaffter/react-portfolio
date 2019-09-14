@@ -14,7 +14,7 @@ export default class AppRoot extends Component {
   setRef = ({ ref, page }) => {
     this[page] = ref;
   };
-  isMobileDevice = _ => typeof window.orientation !== 'undefined' || navigator.userAgent.includes('IEMobile');
+  isMobileDevice = typeof window.orientation !== 'undefined' || navigator.userAgent.includes('IEMobile');
   render() {
     return (
       <>

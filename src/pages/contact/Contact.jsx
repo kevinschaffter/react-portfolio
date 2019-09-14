@@ -17,7 +17,7 @@ const Contact = _ => {
             <div className={classes.imgCrop}>
               <img src={headshot} alt="" />
             </div>
-            <div>
+            <div className={classes.rightInfo}>
               <h4>Kevin Schaffter</h4>
               <div>
                 <FontAwesomeIcon icon={faEnvelope} />

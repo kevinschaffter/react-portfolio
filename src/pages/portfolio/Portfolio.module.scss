@@ -1,3 +1,5 @@
+@import '../../utilities/scss_variables.scss';
+
 .container {
   background: #34495e;
   height: fit-content;
@@ -6,9 +8,13 @@
   max-width: 100%;
   padding: 35px;
   cursor: pointer;
+  p {
+    @include fluid-type(320px, 1200px, 12px, 18.5px);
+  }
   h3 {
     margin: 0px 0px 65px 0px;
     text-align: center;
+    @include fluid-type(320px, 1200px, 30px, 32px);
   }
 }
 .carecloudLogo {
@@ -115,7 +121,7 @@
   display: grid;
   justify-content: space-around;
   align-items: center;
-  grid-template-columns: repeat(auto-fit, minMax(420px, 1fr));
+  grid-template-columns: repeat(auto-fit, minMax(306px, 1fr));
   grid-column-gap: 35px;
   grid-row-gap: 35px;
   > div {

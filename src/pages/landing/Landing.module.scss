@@ -1,17 +1,5 @@
 @import '../../utilities/scss_variables.scss';
 
-@mixin textBreakpoints($first, $second, $third) {
-  @media screen and (min-width: 550px) {
-    font-size: $first;
-  }
-  @media screen and (min-width: 800px) {
-    font-size: $second;
-  }
-  @media screen and (min-width: 1200px) {
-    font-size: $third;
-  }
-}
-
 .container {
   background: $landing;
   height: 100vh;
@@ -22,12 +10,10 @@
   max-width: 100%;
   overflow: hidden;
   h1 {
-    font-size: 12vw;
-    @include textBreakpoints(8vw, 7.5vw, 90px);
+    @include fluid-type(320px, 1200px, 42px, 90px);
   }
   h3 {
-    font-size: 5vw;
-    @include textBreakpoints(4vw, 3vw, 32px);
+    @include fluid-type(320px, 1200px, 20px, 32px);
   }
   h4 {
     color: #fff;
@@ -35,6 +21,7 @@
     margin: 10px 0px 0px 5px;
     font-weight: 700;
     text-align: center;
+    @include fluid-type(320px, 1200px, 17px, 24px);
   }
   hr {
     background: #fff;

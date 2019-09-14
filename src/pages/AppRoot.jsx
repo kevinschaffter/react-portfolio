@@ -23,7 +23,7 @@ export default class AppRoot extends Component {
         ) : (
           <>
             <Landing handleMoreClick={this.handleMoreClick} isSafari={this.isSafari} />
-            <About setRef={this.setRef} handleMoreClick={this.handleMoreClick} />
+            <About setRef={this.setRef} handleMoreClick={this.handleMoreClick} isMobileDevice={this.isMobileDevice} />
             <Portfolio setRef={this.setRef} isSafari={this.isSafari} />
             <Contact />
           </>

@@ -1,37 +1,55 @@
 import React from 'react';
 import classes from './Education.module.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAward } from '@fortawesome/free-solid-svg-icons';
 import { iu, wyncode, yale } from '../../../../images';
 
-const Education = _ => {
-  return (
-    <div className={classes.container}>
-      <h4>EDUCATION</h4>
-      <div>
-        <div className={classes.imageCrop}>
-          <img className={classes.image} src={wyncode} alt="" />
-        </div>
-        <p>
-          <span>Wyncode Academy</span> - Web Development
-        </p>
+const schools = [
+  {
+    title: 'Wyncode Academy',
+    description: 'Web Development',
+    icon: wyncode,
+    award: 'Winner - pitch day 2018',
+  },
+  {
+    title: 'Yale University',
+    description: 'Master of Music',
+    icon: yale,
+    award: 'Philip Frances Nelson Award',
+    subHeader: '"Awarded for a student who demonstrates curiosity, talent and the entrepreneurial spirit"',
+  },
+  {
+    title: 'Indiana University',
+    description: 'Bachelor of Music',
+    icon: iu,
+    award: 'L.E.A.D.ING with Initiative Award',
+  },
+];
+
+const School = ({ title, description, icon, award, subHeader }) => (
+  <div className={classes.schoolContainer}>
+    <div className={classes.contentContainer}>
+      <div className={classes.imageCrop}>
+        <img className={classes.image} src={icon} alt="" />
       </div>
-      <div>
-        <div className={classes.imageCrop}>
-          <img className={classes.image} src={yale} alt="" />
-        </div>
-        <p>
-          <span>Yale University</span> - Master's in Music
-        </p>
-      </div>
-      <div>
-        <div className={classes.imageCrop}>
-          <img className={classes.image} src={iu} alt="" />
-        </div>
-        <p>
-          <span>Indiana University</span> - Bachelor's in Music
-        </p>
-      </div>
+      <p>
+        <span>{title}</span> - {description}
+      </p>
     </div>
-  );
-};
+    <div className={classes.awardContainer}>
+      <FontAwesomeIcon icon={faAward} /> <p>{award}</p>
+    </div>
+    {subHeader && <p>{subHeader}</p>}
+  </div>
+);
+
+const Education = _ => (
+  <div className={classes.container}>
+    <h4>EDUCATION</h4>
+    {schools.map(info => (
+      <School {...info} />
+    ))}
+  </div>
+);
 
 export default Education;

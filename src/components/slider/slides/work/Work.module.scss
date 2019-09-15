@@ -2,9 +2,6 @@
   display: flex;
   min-width: 100%;
   flex-direction: column;
-  img {
-    margin-right: 8px;
-  }
   > div {
     display: flex;
     align-items: center;
@@ -19,14 +16,23 @@
   }
 }
 .logo {
-  width: 27px;
-  align-self: flex-start;
-  margin-top: 4px;
+  width: 80%;
+  height: 80%;
+  margin-left: 2px;
 }
 .imageCrop {
-  height: auto;
+  align-self: flex-start;
+  height: 27px;
+  position: relative;
+  top: 1px;
+  right: 2px;
+  background: #4c98cf;
   overflow: hidden;
   border-radius: 50%;
+  align-items: center;
+  display: flex;
+  width: 28px;
+  justify-content: center;
 }
 .infoContainer {
   display: flex;
@@ -34,7 +40,7 @@
   width: 500px;
   ul {
     margin: 20px 0 0 0;
-    padding-left: 0;
+    padding-left: 4px;
     color: #fff;
     li {
       font-size: 22px;

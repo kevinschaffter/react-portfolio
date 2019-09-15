@@ -2,30 +2,54 @@
   display: flex;
   min-width: 100%;
   flex-direction: column;
+  p {
+    font-size: 17px;
+  }
   span {
     font-weight: 800;
   }
-  & div {
-    display: flex;
-    align-items: center;
-  }
-  > div {
-    margin-bottom: 16px;
+  > div:not(:last-of-type) {
+    margin-bottom: 10px;
   }
   p {
     margin-left: 13px;
   }
   h4 {
     text-align: left;
-    margin: 0px 0px 13px 0px;
+    margin: 0px 0px 13px;
   }
+}
+.contentContainer {
+  display: flex;
+  align-items: center;
 }
 .imageCrop {
   height: auto;
+  display: flex;
   overflow: hidden;
   border-radius: 50%;
   margin-right: 8px;
 }
 .image {
   width: 25px;
+}
+.schoolContainer {
+  display: flex;
+  flex-direction: column;
+  > p:last-of-type {
+    font-style: italic;
+    width: 370px;
+    font-size: 14px;
+    margin-left: 37px;
+  }
+}
+.awardContainer {
+  color: #fff;
+  margin-left: 38px;
+  svg {
+    font-size: 17px;
+    margin: 7px 3px 0 0;
+  }
+  font-size: 17px;
+  display: flex;
 }

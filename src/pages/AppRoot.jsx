@@ -11,7 +11,7 @@ export default class AppRoot extends Component {
   handleMoreClick = page => {
     this[page].scrollIntoView({
       behavior: 'smooth',
-      block: 'start'
+      block: 'start',
     });
   };
 

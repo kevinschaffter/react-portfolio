@@ -6,8 +6,6 @@ export default class AppRoot extends Component {
     return navigator.vendor === 'Apple Computer, Inc.';
   }
 
-  isMobileDevice = typeof window.orientation !== 'undefined' || navigator.userAgent.includes('IEMobile');
-
   handleMoreClick = page => {
     this[page].scrollIntoView({
       behavior: 'smooth',
@@ -21,7 +19,7 @@ export default class AppRoot extends Component {
     return (
       <>
         <Landing handleMoreClick={this.handleMoreClick} isSafari={this.isSafari} />
-        <About setRef={this.setRef} handleMoreClick={this.handleMoreClick} isMobileDevice={this.isMobileDevice} />
+        <About setRef={this.setRef} handleMoreClick={this.handleMoreClick} />
         <Portfolio setRef={this.setRef} isSafari={this.isSafari} />
         <Contact />
       </>

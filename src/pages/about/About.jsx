@@ -6,7 +6,7 @@ import { iconInfo } from './IconInfo';
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const About = ({ handleMoreClick, setRef, isMobileDevice }) => (
+const About = ({ handleMoreClick, setRef }) => (
   <div
     ref={ref => {
       setRef({ ref, page: 'about' });
@@ -24,14 +24,15 @@ const About = ({ handleMoreClick, setRef, isMobileDevice }) => (
         </div>
       </Fade>
       <Icons iconInfo={iconInfo} stagger down />
-      {!isMobileDevice && (
-        <Slider>
-          <Work />
-          <Skills />
-          <Education />
-          <Bio />
-        </Slider>
-      )}
+      <div className={classes.mobileInfo}>
+        <Work />
+      </div>
+      <Slider>
+        <Work />
+        <Skills />
+        <Education />
+        <Bio />
+      </Slider>
       <Fade delay={1200}>
         <div className={classes.portfolioMore} onClick={_ => handleMoreClick('portfolio')}>
           <FontAwesomeIcon icon={faArrowDown} />

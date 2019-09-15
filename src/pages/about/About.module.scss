@@ -51,6 +51,24 @@
   flex-direction: column;
   justify-content: space-between;
 }
+.mobileInfo {
+  display: hidden;
+  align-self: center;
+  max-width: 605px;
+  margin-top: 15px;
+  height: fit-content;
+  background: rgba(112, 112, 112, 0.15);
+  border-radius: 5px;
+  padding: 17px;
+  overflow: hidden;
+  margin: 22px;
+  & [class*='infoContainer'] {
+    width: 100%;
+  }
+  @media screen and (max-width: 739px) {
+    display: block;
+  }
+}
 .portfolioMore {
   display: flex;
   flex-direction: column;

@@ -9,7 +9,7 @@ const schools = [
     title: 'Wyncode Academy',
     description: 'Web Development',
     icon: wyncode,
-    award: 'Winner - pitch day 2018',
+    award: 'Winner - Pitch Day 2018',
   },
   {
     title: 'Yale University',

@@ -1,21 +1,31 @@
 import React from 'react';
 import classes from './Work.module.scss';
-import { carecloudSquare, auditionCafe } from '../../../../images';
+import { carecloudSquare } from '../../../../images';
 
 const Work = _ => {
   return (
     <div className={classes.container}>
-      <h4>RECENT WORK</h4>
+      <h4>CURRENT WORK</h4>
       <div>
         <img className={classes.logo} src={carecloudSquare} alt="" />
         <div className={classes.infoContainer}>
-          <p>CareCloud - Associate Software Engineer II</p>
-          <p>App development utilizing React and GraphQL</p>
+          <p>CareCloud - practice management / EHR suite</p>
+          <p>Assoc. Software Engineer II</p>
+          <ul>
+            <li>
+              <span>
+                Leading UI team in building CareCloud's next generation appointment scheduling system using React,
+                GraphQL and Firebase in a micro-frontend architecture.
+              </span>
+            </li>
+            <li>
+              <span>
+                Conducting code reviews and translating business requirements into actionable ticket items for frontend
+                development team.
+              </span>
+            </li>
+          </ul>
         </div>
-      </div>
-      <div>
-        <img className={classes.logo} src={auditionCafe} alt="" />
-        <p>AuditionCafe.Com - Creator</p>
       </div>
     </div>
   );

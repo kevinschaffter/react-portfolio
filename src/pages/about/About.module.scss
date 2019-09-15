@@ -33,10 +33,10 @@
   opacity: 0;
   margin: 30px;
   h1 {
-    @include fluid-type(320px, 1200px, 42px, 90px);
+    @include fluid-type(320px, 1200px, 42px, 80px);
   }
   h3 {
-    @include fluid-type(320px, 1200px, 18px, 32px);
+    @include fluid-type(320px, 1200px, 18px, 28px);
   }
   margin-bottom: 20px;
 }

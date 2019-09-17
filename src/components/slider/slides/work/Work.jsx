@@ -15,8 +15,8 @@ const Work = _ => (
         <ul>
           <li>
             <span>
-              Leading UI team in building CareCloud's next generation appointment scheduling system using React, GraphQL
-              and Firebase in a micro-frontend architecture.
+              Building CareCloud's next generation appointment scheduling system using React, GraphQL and Firebase in a
+              micro-frontend architecture.
             </span>
           </li>
           <li>

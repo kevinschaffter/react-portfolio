@@ -25,6 +25,7 @@
   height: 27px;
   position: relative;
   top: 1px;
+  flex-shrink: 0;
   right: 2px;
   background: #4c98cf;
   overflow: hidden;
@@ -37,7 +38,7 @@
 .infoContainer {
   display: flex;
   flex-direction: column;
-  width: 500px;
+  max-width: 500px;
   ul {
     margin: 20px 0 0 0;
     padding-left: 4px;
@@ -48,6 +49,9 @@
       span {
         font-size: 17px;
       }
+    }
+    li:last-of-type {
+      margin-bottom: 0;
     }
   }
   > p:nth-of-type(2) {

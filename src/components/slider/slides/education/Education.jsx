@@ -33,7 +33,7 @@ const School = ({ title, description, icon, award, subHeader }) => (
         <img className={classes.image} src={icon} alt="" />
       </div>
       <p>
-        <span>{title}</span> - {description}
+        <span>{title}</span> - <span>{description}</span>
       </p>
     </div>
     <div className={classes.awardContainer}>

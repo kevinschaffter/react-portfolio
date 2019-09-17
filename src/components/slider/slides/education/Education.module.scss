@@ -1,3 +1,5 @@
+@import '../../../../utilities/scss_variables.scss';
+
 .container {
   display: flex;
   min-width: 100%;
@@ -5,7 +7,7 @@
   p {
     font-size: 17px;
   }
-  span {
+  span:first-of-type {
     font-weight: 800;
   }
   > div:not(:last-of-type) {
@@ -29,6 +31,7 @@
   overflow: hidden;
   border-radius: 50%;
   margin-right: 8px;
+  flex-shrink: 0;
 }
 .image {
   width: 25px;
@@ -38,7 +41,7 @@
   flex-direction: column;
   > p:last-of-type {
     font-style: italic;
-    width: 370px;
+    max-width: 370px;
     font-size: 14px;
     margin-left: 37px;
   }
@@ -46,10 +49,13 @@
 .awardContainer {
   color: #fff;
   margin-left: 38px;
+  display: flex;
   svg {
     font-size: 17px;
     margin: 7px 3px 0 0;
   }
-  font-size: 17px;
+  p {
+    @include fluid-type(320px, 1200px, 15px, 17px);
+  }
   display: flex;
 }

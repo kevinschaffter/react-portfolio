@@ -24,9 +24,6 @@ const About = ({ handleMoreClick, setRef }) => (
         </div>
       </Fade>
       <Icons iconInfo={iconInfo} stagger down />
-      <div className={classes.mobileInfo}>
-        <Work />
-      </div>
       <Slider>
         <Work />
         <Skills />

@@ -1,28 +1,42 @@
 .container {
-  @media screen and (max-width: 739px) {
-    display: none;
-  }
-  margin: 20px 0 0 10px;
-  max-width: 750px;
+  margin-top: 20px;
   align-self: center;
   display: flex;
   align-items: center;
+  position: relative;
+  @media screen and (max-width: 739px) {
+    > svg:last-of-type {
+      position: absolute;
+      top: 103.5%;
+      left: 65%;
+    }
+    > svg:first-of-type {
+      position: absolute;
+      top: 103.5%;
+      left: 25%;
+    }
+    margin-bottom: 80px;
+  }
   p {
     color: #fff;
   }
 }
 .contentContainer {
   align-self: center;
-  max-width: 605px;
   margin-top: 15px;
   height: fit-content;
   background: rgba(112, 112, 112, 0.15);
   border-radius: 5px;
-  padding: 17px 0 17px 23px;
   overflow: hidden;
+  max-width: 605px;
+  @media screen and (min-width: 2100px) {
+    max-width: 750px;
+  }
+  @media screen and (max-width: 739px) {
+    max-width: 85vw;
+  }
 }
 .menuContainer {
-  width: 80%;
   margin: 0 20px;
 }
 .arrow {
@@ -44,6 +58,9 @@
 .slider {
   display: flex;
   transition: 0.7s;
+  > div {
+    padding: 17px 17px 17px 23px;
+  }
 }
 .menu {
   display: flex;

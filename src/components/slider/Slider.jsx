@@ -23,7 +23,7 @@ class Slider extends Component {
           <FontAwesomeIcon
             icon={faArrowCircleLeft}
             onClick={_ => step && this.handleMenuClick(step - 1)}
-            className={classnames(classes.arrow, { [classes.visible]: step })}
+            className={classnames(classes.arrow, { [classes.activeArrow]: step })}
           />
           <div className={classes.menuContainer}>
             <div className={classes.menu}>
@@ -44,7 +44,7 @@ class Slider extends Component {
           <FontAwesomeIcon
             icon={faArrowCircleRight}
             onClick={_ => step < keys.length - 1 && this.handleMenuClick(step + 1)}
-            className={classnames(classes.arrow, { [classes.visible]: step < keys.length - 1 })}
+            className={classnames(classes.arrow, { [classes.activeArrow]: step < keys.length - 1 })}
           />
         </div>
       </Fade>

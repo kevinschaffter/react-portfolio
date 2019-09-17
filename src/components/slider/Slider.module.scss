@@ -40,7 +40,7 @@
   margin: 0 20px;
 }
 .arrow {
-  opacity: 0;
+  opacity: 0.25;
   transition: 0.5s;
   color: #fff;
   font-size: 40px;
@@ -50,7 +50,7 @@
     transition: 0.5s;
   }
 }
-.visible {
+.activeArrow {
   opacity: 1;
   transition: 0.5s;
   cursor: pointer;

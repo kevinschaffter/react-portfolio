@@ -6,6 +6,7 @@
   width: 100vw;
   display: flex;
   max-width: 100%;
+  overflow: hidden;
   p {
     margin: 3px;
   }
@@ -20,7 +21,7 @@
   text-align: left;
 }
 .imageContainer {
-  @media screen and (max-width: 739px) {
+  @media screen and (max-width: 742px) {
     display: none;
   }
   min-height: 100vh;
@@ -44,8 +45,8 @@
   animation: fadeIn 1s forwards;
 }
 .about {
-  @media screen and (min-width: 739px) {
-    min-width: 700px;
+  @media screen and (min-width: 742px) {
+    min-width: 760px;
   }
   display: flex;
   flex-direction: column;

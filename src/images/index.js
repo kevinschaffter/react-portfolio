@@ -5,6 +5,6 @@ export { default as carecloud } from './carecloud.png';
 export { default as carecloudSquare } from './carecloudSquare.png';
 export { default as auditionCafe } from './auditionCafe.jpg';
 export { default as breeze } from './breeze.jpg';
-export { default as maze } from './maze.jpg';
 export { default as acafe } from './acafe.jpg';
 export { default as headshot } from './headshot.jpg';
+export { default as goScreens } from './goPlatforms.png';

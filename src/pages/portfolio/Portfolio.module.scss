@@ -80,6 +80,10 @@
     animation: slideIn 0.7s forwards;
   }
 }
+.goContainer {
+  @extend .imgCrop;
+  background-color: #fafafa;
+}
 .imgCrop {
   overflow: hidden;
   display: flex;
@@ -107,14 +111,6 @@
   &:hover > img {
     transform: scale(1.1);
     transition: 0.7s;
-  }
-}
-.pitchDay {
-  display: flex;
-  align-items: center;
-  margin-top: 7px;
-  svg {
-    margin-right: 5px;
   }
 }
 .contentContainer {

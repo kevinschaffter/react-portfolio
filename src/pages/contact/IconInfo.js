@@ -16,7 +16,7 @@ export const iconInfo = [
   {
     icon: faEnvelope,
     text: 'Email',
-    link: 'mailto:kevinschaffter@gmail.com',
+    link: 'mailto:kevin@schaffters.com',
   },
   {
     icon: faFile,

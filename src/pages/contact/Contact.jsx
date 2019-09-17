@@ -20,7 +20,7 @@ const Contact = _ => (
             <h4>Kevin Schaffter</h4>
             <div>
               <FontAwesomeIcon icon={faEnvelope} />
-              <p>kevinschaffter@gmail.com</p>
+              <p>kevin@schaffters.com</p>
             </div>
             <div>
               <FontAwesomeIcon icon={faPhone} />

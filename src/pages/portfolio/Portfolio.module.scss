@@ -84,6 +84,12 @@
   @extend .imgCrop;
   background-color: #fafafa;
 }
+.auditionContainer {
+  @extend .imgCrop;
+  img {
+    min-width: 418px;
+  }
+}
 .imgCrop {
   overflow: hidden;
   display: flex;

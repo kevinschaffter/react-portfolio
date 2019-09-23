@@ -51,7 +51,7 @@ const Portfolio = ({ setRef, isSafari }) => (
           <h4>Breeze Portal</h4>
         </div>
         <div>
-          <div className={classes.imgCrop}>
+          <div className={classes.auditionContainer}>
             <div className={classes.overlay}>
               <p>Founder and creator of AuditionCafe.com, the world's leading classical music job board.</p>
               <p>

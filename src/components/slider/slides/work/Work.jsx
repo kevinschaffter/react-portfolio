@@ -11,12 +11,12 @@ const Work = _ => (
       </div>
       <div className={classes.infoContainer}>
         <p>CareCloud - practice management / EHR suite</p>
-        <p>Assoc. Software Engineer II</p>
+        <p>Software Engineer II</p>
         <ul>
           <li>
             <span>
-              Building CareCloud's next generation appointment scheduling system using React, GraphQL and Firebase in a
-              micro-frontend architecture.
+              Leading UI team in rebuilding CareCloud's next generation appointment scheduling system using React,
+              GraphQL and Firebase in a micro-frontend architecture.
             </span>
           </li>
           <li>

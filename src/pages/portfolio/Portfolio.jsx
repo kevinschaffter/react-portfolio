@@ -64,7 +64,7 @@ const Portfolio = ({ setRef, isSafari }) => (
             </div>
             <img src={acafe} alt="audition cafe" />
           </div>
-          <h4>AudtionCafe.com</h4>
+          <h4>AuditionCafe.com</h4>
         </div>
       </div>
     </Fade>

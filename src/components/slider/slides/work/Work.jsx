@@ -1,28 +1,42 @@
 import React from 'react';
 import classes from './Work.module.scss';
-import { carecloudSquare } from '../../../../images';
+import { carecloudSquare, rbi } from '../../../../images';
 
 const Work = _ => (
   <div className={classes.container}>
-    <h4>CURRENT WORK</h4>
+    <h4>RECENT WORK</h4>
     <div>
-      <div className={classes.imageCrop}>
-        <img className={classes.logo} src={carecloudSquare} alt="" />
+      <div className={classes.rbiImageCrop}>
+        <img className={classes.rbiLogo} src={rbi} alt="" />
       </div>
       <div className={classes.infoContainer}>
-        <p>CareCloud - practice management / EHR suite</p>
+        <p>Restaurant Brands International</p>
+        <p className={classes.subHeader}>BURGER KING® | Tim Hortons® | Popeyes®</p>
+        <p className={classes.year}>2019 - CURRENT</p>
+        <p>Software Engineer</p>
+        <ul>
+          <li>
+            <span>
+              Building applications using React / TypeScript within a serverless architecture to support 26,000
+              restaurants in 120+ countries
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <div className={classes.imageCrop}>
+        <img className={classes.carecloudLogo} src={carecloudSquare} alt="" />
+      </div>
+      <div className={classes.infoContainer}>
+        <p>CareCloud</p>
+        <p className={classes.year}>2018 - 2019</p>
         <p>Software Engineer II</p>
         <ul>
           <li>
             <span>
-              Leading UI team in rebuilding CareCloud's next generation appointment scheduling system using React,
-              GraphQL and Firebase in a micro-frontend architecture.
-            </span>
-          </li>
-          <li>
-            <span>
-              Conducting code reviews and translating business requirements into actionable ticket items for frontend
-              development team.
+              Led UI team in building appointment scheduling system using React, GraphQL and Firebase in a
+              micro-frontend architecture.
             </span>
           </li>
         </ul>

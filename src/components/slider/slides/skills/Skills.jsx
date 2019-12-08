@@ -6,7 +6,7 @@ const Skills = _ => (
     <h4>SKILLS &amp; TOOLS</h4>
     <div>
       <p>Languages:</p>
-      <p>JavaScript, TypeScript, Ruby, GraphQL, SQL/NoSQL, HTML, CSS/SCSS, JSS</p>
+      <p>JavaScript, TypeScript, Ruby, GraphQL, HTML, CSS/SCSS, JSS</p>
     </div>
     <div>
       <p>Libraries &amp; Frameworks:</p>

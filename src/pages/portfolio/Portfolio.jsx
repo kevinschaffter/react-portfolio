@@ -22,10 +22,7 @@ const Portfolio = ({ setRef, isSafari }) => (
                 Building CareCloud's next generation cloud-based practice management / EHR using React, GraphQL,
                 firebase and firestore in a micro-frontend architecture.
               </p>
-              <p>
-                Currently leading the UI scheduling feature team in building the applications' new appointment
-                scheduling system.
-              </p>
+              <p>Led the UI scheduling feature team in building the applications' new appointment scheduling system.</p>
               <Button small className={classes.visitBtn} link="https://www.carecloud.com/go/">
                 Visit
               </Button>

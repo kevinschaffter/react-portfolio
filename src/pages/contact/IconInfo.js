@@ -11,7 +11,7 @@ export const iconInfo = [
   {
     icon: faGithub,
     text: 'Github',
-    link: 'https://github.com/kschaffter-carecloud',
+    link: 'https://github.com/kevinschaffter',
   },
   {
     icon: faEnvelope,

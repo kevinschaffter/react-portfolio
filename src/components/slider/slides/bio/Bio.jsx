@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './Bio.module.scss';
 
-const Bio = _ => (
+const Bio = () => (
   <div className={classes.container}>
     <h4>BIO</h4>
     <div>

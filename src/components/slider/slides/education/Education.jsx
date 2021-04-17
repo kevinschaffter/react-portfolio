@@ -43,7 +43,7 @@ const School = ({ title, description, icon, award, subHeader }) => (
   </div>
 );
 
-const Education = _ => (
+const Education = () => (
   <div className={classes.container}>
     <h4>EDUCATION</h4>
     {schools.map(info => (

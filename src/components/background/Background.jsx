@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.scss';
 
-const ParallaxBackground = _ => {
+const ParallaxBackground = () => {
   return (
     <div className="parallax">
       <div id="stars1" />

@@ -1,20 +1,20 @@
 import React from 'react';
 import classes from './Skills.module.scss';
 
-const Skills = _ => (
+const Skills = () => (
   <div className={classes.container}>
     <h4>SKILLS &amp; TOOLS</h4>
     <div>
       <p>Languages:</p>
-      <p>JavaScript, TypeScript, Ruby, GraphQL, HTML, CSS/SCSS, JSS</p>
+      <p>TypeScript, JavaScript, GraphQL, Ruby, HTML, CSS/SCSS, JSS</p>
     </div>
     <div>
       <p>Libraries &amp; Frameworks:</p>
-      <p>React, Express, Node, Single-Spa, Ruby on Rails, Sinatra, Lodash</p>
+      <p>React, Express, Node, Storybook, Single-Spa, Ruby on Rails</p>
     </div>
     <div>
       <p>Testing:</p>
-      <p>Jest, Enzyme</p>
+      <p>Jest, React Testing Library, Enzyme</p>
     </div>
     <div>
       <p>Concepts &amp; Tools:</p>

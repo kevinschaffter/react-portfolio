@@ -19,7 +19,7 @@ const About = ({ handleMoreClick, setRef }) => (
           <h1>Hi!</h1>
           <h3>
             I have a passion for crispy clean code and beautiful web design that leads to a great user experience. I
-            work primarily in JavaScript and specialize in React.js.
+            work primarily in TypeScript and specialize in React.js.
           </h3>
         </div>
       </Fade>
@@ -31,7 +31,7 @@ const About = ({ handleMoreClick, setRef }) => (
         <Bio />
       </Slider>
       <Fade delay={1200}>
-        <div className={classes.portfolioMore} onClick={_ => handleMoreClick('portfolio')}>
+        <div className={classes.portfolioMore} onClick={() => handleMoreClick('portfolio')}>
           <FontAwesomeIcon icon={faArrowDown} />
         </div>
       </Fade>

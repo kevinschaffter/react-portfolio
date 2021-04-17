@@ -7,7 +7,7 @@ import { headshot } from '../../images';
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const Contact = _ => (
+const Contact = () => (
   <div className={classes.container}>
     <Fade>
       <h3>Get In Touch!</h3>

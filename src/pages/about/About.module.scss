@@ -32,14 +32,13 @@
 }
 .textContainer {
   opacity: 0;
-  margin: 30px;
+  margin: 17px 30px;
   h1 {
     @include fluid-type(320px, 1200px, 42px, 80px);
   }
   h3 {
     @include fluid-type(320px, 1200px, 18px, 28px);
   }
-  margin-bottom: 20px;
 }
 .fadeIn {
   animation: fadeIn 1s forwards;
@@ -60,7 +59,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 35px;
+  margin: 20px 0;
   cursor: pointer;
   svg {
     color: #fff;

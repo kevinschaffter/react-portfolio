@@ -7,15 +7,17 @@ class Landing extends PureComponent {
   get buttonStyle() {
     return this.props.isSafari && { style: { fontSize: 15.5 } };
   }
+
   componentDidMount() {
     const options = {
       strings: ['Web Applications', 'User Interfaces', 'React Applications', 'Time Machines', 'Fun Web Things'],
       typeSpeed: 60,
       backSpeed: 35,
-      loop: true
+      loop: true,
     };
     this.typed = new Typed(this.el, options);
   }
+
   render() {
     const { handleMoreClick } = this.props;
     return (
@@ -35,8 +37,8 @@ class Landing extends PureComponent {
               </h3>
             </div>
             <hr />
-            <h4>Frontend Software Engineer</h4>
-            <Button {...this.buttonStyle} onClick={_ => handleMoreClick('about')}>
+            <h4>Software Engineer Based in Austin, TX</h4>
+            <Button {...this.buttonStyle} onClick={() => handleMoreClick('about')}>
               Learn More
             </Button>
           </div>

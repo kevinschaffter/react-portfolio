@@ -2,7 +2,7 @@ import React from 'react';
 import classes from './Work.module.scss';
 import { carecloudSquare, rbi } from '../../../../images';
 
-const Work = _ => (
+const Work = () => (
   <div className={classes.container}>
     <h4>RECENT WORK</h4>
     <div>
@@ -13,13 +13,10 @@ const Work = _ => (
         <p>Restaurant Brands International</p>
         <p className={classes.subHeader}>BURGER KING® | Tim Hortons® | Popeyes®</p>
         <p className={classes.year}>2019 - CURRENT</p>
-        <p>Software Engineer</p>
+        <p>Lead Senior Software Engineer</p>
         <ul>
           <li>
-            <span>
-              Building applications using React / TypeScript within a serverless architecture to support 26,000
-              restaurants in 120+ countries
-            </span>
+            <span>Leading development on the loyalty feature team in support of 20+ million monthly active users.</span>
           </li>
         </ul>
       </div>
@@ -35,7 +32,7 @@ const Work = _ => (
         <ul>
           <li>
             <span>
-              Led UI team in building appointment scheduling system using React, GraphQL and Firebase in a
+              Led UI feature team in building appointment scheduling system using React, GraphQL and Firebase in a
               micro-frontend architecture.
             </span>
           </li>

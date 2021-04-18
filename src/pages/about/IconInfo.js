@@ -1,4 +1,4 @@
-import { faJs, faReact, faNodeJs, faHtml5, faCss3 } from '@fortawesome/free-brands-svg-icons';
+import { faReact, faNodeJs, faHtml5, faCss3 } from '@fortawesome/free-brands-svg-icons';
 
 const faGraphQl = {
   prefix: 'fac',

@@ -1,7 +1,58 @@
 @import '../../utilities/scss_variables.scss';
 
-.container {
+.dark {
+  background: $dark;
+}
+
+.black {
+  background: $black;
+}
+
+.green {
+  background: $green;
+}
+
+.red {
+  background: $red;
+}
+
+.landing {
   background: $landing;
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(3px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.magicIcon {
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  user-select: none;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  svg {
+    color: #fff;
+    height: 24px;
+    width: 24px !important;
+    animation: fadeIn 1.25s ease-in-out infinite;
+  }
+}
+
+.container {
+  transition: 0.5s;
   height: 100vh;
   width: 100vw;
   display: flex;

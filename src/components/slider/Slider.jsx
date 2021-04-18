@@ -1,19 +1,19 @@
 import React, { Component } from 'react';
-import classes from './Slider.module.scss';
 import { Fade } from 'react-reveal';
 import classnames from 'classnames';
 import { faArrowCircleLeft, faArrowCircleRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import classes from './Slider.module.scss';
 
 class Slider extends Component {
   state = { step: 0, keys: Array(this.props.children.length).fill(Math.random()) };
-
-  handleMenuClick = step => this.setState({ step });
 
   get step() {
     const { step } = this.state;
     return { transform: `translateX(-${step * 100}%)` };
   }
+
+  handleMenuClick = step => this.setState({ step });
 
   render() {
     const { keys, step } = this.state;

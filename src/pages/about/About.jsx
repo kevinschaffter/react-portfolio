@@ -1,10 +1,10 @@
 import React from 'react';
-import classes from './About.module.scss';
-import { Icons, Education, Work, Slider, Bio, Skills } from '../../components/index';
 import { Fade } from 'react-reveal';
-import { iconInfo } from './IconInfo';
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import classes from './About.module.scss';
+import { Icons, Education, Work, Slider, Bio, Skills } from '../../components/index';
+import { iconInfo } from './IconInfo';
 
 const About = ({ handleMoreClick, setRef }) => (
   <div

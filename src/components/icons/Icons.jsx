@@ -1,7 +1,7 @@
 import React from 'react';
-import classes from './Icons.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Fade } from 'react-reveal';
+import classes from './Icons.module.scss';
 
 const Icons = ({ iconInfo, stagger, delay, ...animation }) => (
   <div className={classes.logoContainer}>

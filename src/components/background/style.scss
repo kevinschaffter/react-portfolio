@@ -1,17 +1,21 @@
 // n is number of stars required
-@function multiple-box-shadow($n) {
-  $value: '#{random(2000)}px #{random(2000)}px';
+@function multiple-box-shadow($n, $screenSize) {
+  $value: '#{random($screenSize)}px #{random($screenSize)}px';
 
   @for $i from 2 through $n {
-    $value: '#{$value} , #{random(2000)}px #{random(2000)}px';
+    $value: '#{$value} , #{random($screenSize)}px #{random($screenSize)}px';
   }
 
   @return unquote($value);
 }
 
-$shadows-small: multiple-box-shadow(700);
-$shadows-medium: multiple-box-shadow(200);
-$shadows-big: multiple-box-shadow(100);
+$shadows-small: multiple-box-shadow(700, 2000);
+$shadows-medium: multiple-box-shadow(200, 2000);
+$shadows-big: multiple-box-shadow(100, 2000);
+
+$shadows-small-widescreen: multiple-box-shadow(700, 3000);
+$shadows-medium-widescreen: multiple-box-shadow(200, 3000);
+$shadows-big-widescreen: multiple-box-shadow(100, 3000);
 
 .parallax {
   margin-right: auto;
@@ -22,6 +26,9 @@ $shadows-big: multiple-box-shadow(100);
     border-radius: 50%;
     background: transparent;
     box-shadow: $shadows-small;
+    @media screen and (min-width: 2000px) {
+      box-shadow: $shadows-small-widescreen;
+    }
     animation: animStar 150s linear infinite;
 
     &:after {
@@ -33,6 +40,9 @@ $shadows-big: multiple-box-shadow(100);
       border-radius: 50%;
       background: transparent;
       box-shadow: $shadows-small;
+      @media screen and (min-width: 2000px) {
+        box-shadow: $shadows-small-widescreen;
+      }
     }
   }
 
@@ -42,6 +52,9 @@ $shadows-big: multiple-box-shadow(100);
     border-radius: 50%;
     background: transparent;
     box-shadow: $shadows-medium;
+    @media screen and (min-width: 2000px) {
+      box-shadow: $shadows-medium-widescreen;
+    }
     animation: animStar 100s linear infinite;
 
     &:after {
@@ -53,6 +66,9 @@ $shadows-big: multiple-box-shadow(100);
       border-radius: 50%;
       background: transparent;
       box-shadow: $shadows-medium;
+      @media screen and (min-width: 2000px) {
+        box-shadow: $shadows-medium-widescreen;
+      }
     }
   }
 
@@ -62,6 +78,9 @@ $shadows-big: multiple-box-shadow(100);
     border-radius: 50%;
     background: transparent;
     box-shadow: $shadows-big;
+    @media screen and (min-width: 2000px) {
+      box-shadow: $shadows-big-widescreen;
+    }
     animation: animStar 50s linear infinite;
 
     &:after {
@@ -73,6 +92,9 @@ $shadows-big: multiple-box-shadow(100);
       border-radius: 50%;
       background: transparent;
       box-shadow: $shadows-big;
+      @media screen and (min-width: 2000px) {
+        box-shadow: $shadows-big-widescreen;
+      }
     }
   }
 

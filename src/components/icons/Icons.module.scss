@@ -22,12 +22,20 @@
     font-family: 'Open Sans';
     font-weight: 800;
     margin-top: 10px;
-    @include fluid-type(320px, 1200px, 13px, 20px);
+    @include fluid-type(320px, 1200px, 12px, 20px);
   }
   svg {
     transition: 0.4s;
     height: 40px;
   }
+
+  @media screen and (max-width: 739px) {
+    svg {
+      height: 25px;
+    }
+    gap: 5px;
+  }
+
   svg:hover {
     transform: scale(1.2);
     transition: 0.4s;

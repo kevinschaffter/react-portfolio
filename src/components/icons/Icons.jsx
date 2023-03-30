@@ -8,7 +8,7 @@ const Icons = ({ iconInfo, stagger, delay, ...animation }) => (
     {iconInfo.map(({ icon, text, link }, i) => (
       <Fade {...animation} delay={stagger ? `${i * 200}` : delay} style={{ ...(link && { cursor: 'pointer' }) }}>
         <a href={link} target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon icon={icon} />
+          <FontAwesomeIcon icon={icon} size="2x" />
           <h4>{text}</h4>
         </a>
       </Fade>

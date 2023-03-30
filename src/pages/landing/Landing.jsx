@@ -33,12 +33,12 @@ const Landing = ({ handleMoreClick, isSafari }) => {
       <Background />
       <Fade>
         <div className={classes.textWrapper}>
-          <h1>Hi, I'm Kevin.</h1>
+          <h1>Hi, I&apos;m Kevin.</h1>
           <div className={classes.subheader}>
             <h3>
               I Build{' '}
               <span
-                ref={el => {
+                ref={(el) => {
                   typedElementRef.current = el;
                 }}
               />

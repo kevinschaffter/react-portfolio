@@ -1,6 +1,5 @@
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faFile } from '@fortawesome/free-solid-svg-icons';
-import resume from '../../images/kevin_resume.pdf';
 
 export const iconInfo = [
   {
@@ -21,6 +20,6 @@ export const iconInfo = [
   {
     icon: faFile,
     text: 'resume',
-    link: resume,
+    link: 'https://drive.google.com/file/d/1dM0o_X2okABXe1g8XOQmSwHzAulvCTJm/view',
   },
 ];

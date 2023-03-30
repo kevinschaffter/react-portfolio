@@ -3,12 +3,12 @@ import { Fade } from 'react-reveal';
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import classes from './About.module.scss';
-import { Icons, Education, Work, Slider, Bio, Skills } from '../../components/index';
+import { Icons, Education, Work, RecentWork, Slider, Bio, Skills } from '../../components/index';
 import { iconInfo } from './IconInfo';
 
 const About = ({ handleMoreClick, setRef }) => (
   <div
-    ref={ref => {
+    ref={(ref) => {
       setRef({ ref, page: 'about' });
     }}
     className={classes.container}
@@ -25,13 +25,14 @@ const About = ({ handleMoreClick, setRef }) => (
       </Fade>
       <Icons iconInfo={iconInfo} stagger down />
       <Slider>
+        <RecentWork />
         <Work />
         <Skills />
         <Education />
         <Bio />
       </Slider>
       <Fade delay={1200}>
-        <div className={classes.portfolioMore} onClick={() => handleMoreClick('portfolio')}>
+        <div tabIndex={0} role="button" className={classes.portfolioMore} onClick={() => handleMoreClick('portfolio')}>
           <FontAwesomeIcon icon={faArrowDown} />
         </div>
       </Fade>

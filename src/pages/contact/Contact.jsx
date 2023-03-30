@@ -1,11 +1,11 @@
 import React from 'react';
-import classes from './Contact.module.scss';
 import { Fade } from 'react-reveal';
+import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import classes from './Contact.module.scss';
 import { Icons } from '../../components/index';
 import { iconInfo } from './IconInfo';
 import { headshot } from '../../images';
-import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Contact = () => (
   <div className={classes.container}>

@@ -1,26 +1,10 @@
 import React from 'react';
 import classes from './Work.module.scss';
-import { carecloudSquare, rbi } from '../../../../images';
+import { carecloudSquare, auditionCafe } from '../../../../images';
 
 const Work = () => (
   <div className={classes.container}>
-    <h4>RECENT WORK</h4>
-    <div>
-      <div className={classes.rbiImageCrop}>
-        <img className={classes.rbiLogo} src={rbi} alt="" />
-      </div>
-      <div className={classes.infoContainer}>
-        <p>Restaurant Brands International</p>
-        <p className={classes.subHeader}>BURGER KING® | Tim Hortons® | Popeyes®</p>
-        <p className={classes.year}>2019 - CURRENT</p>
-        <p>Lead Senior Software Engineer</p>
-        <ul>
-          <li>
-            <span>Leading development on the loyalty feature team in support of 20+ million monthly active users.</span>
-          </li>
-        </ul>
-      </div>
-    </div>
+    <h4>WORK CONTINUED</h4>
     <div>
       <div className={classes.imageCrop}>
         <img className={classes.carecloudLogo} src={carecloudSquare} alt="" />
@@ -34,6 +18,24 @@ const Work = () => (
             <span>
               Led UI feature team in building appointment scheduling system using React, GraphQL and Firebase in a
               micro-frontend architecture.
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <div className={classes.auditionCafeCrop}>
+        <img className={classes.auditionCafeLogo} src={auditionCafe} alt="" />
+      </div>
+      <div className={classes.infoContainer}>
+        <p>AuditionCafe.com</p>
+        <p className={classes.year}>2016 - PRESENT</p>
+        <p>Founder</p>
+        <ul>
+          <li>
+            <span>
+              Launched and scaled classical music job board to 25,000 monthly unique visitors in 128 countries within
+              one year.
             </span>
           </li>
         </ul>

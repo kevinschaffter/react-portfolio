@@ -1,11 +1,19 @@
 {
-  "parser": "babel-eslint",
-  "extends": "airbnb",
+  "parser": "@babel/eslint-parser",
+  "extends": ["airbnb", "prettier"],
+  "parserOptions": {
+    "requireConfigFile": false,
+    "babelOptions": {
+      "presets": ["@babel/preset-react"]
+    }
+  },
   "env": {
     "browser": true,
     "jest": true
   },
   "rules": {
+    "react/jsx-props-no-spreading": 0,
+    "react/function-component-definition": 0,
     "quote-props": [2, "as-needed"],
     "comma-dangle": "error",
     "no-console": "error",
@@ -34,7 +42,7 @@
         "allowTernary": true
       }
     ],
-    "arrow-parens": ["error", "as-needed"],
+    "react/state-in-constructor": 0,
     "no-unused-vars": [
       "error",
       {

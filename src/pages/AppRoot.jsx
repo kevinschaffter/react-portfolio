@@ -1,19 +1,21 @@
 import React, { Component } from 'react';
-import { Landing, About, Portfolio, Contact } from './';
+import { Landing, About, Portfolio, Contact } from '.';
 
 export default class AppRoot extends Component {
   get isSafari() {
     return navigator.vendor === 'Apple Computer, Inc.';
   }
 
-  handleMoreClick = page => {
+  handleMoreClick = (page) => {
     this[page].scrollIntoView({
       behavior: 'smooth',
       block: 'start',
     });
   };
 
-  setRef = ({ ref, page }) => (this[page] = ref);
+  setRef = ({ ref, page }) => {
+    this[page] = ref;
+  };
 
   render() {
     return (

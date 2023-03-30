@@ -13,7 +13,7 @@ class Slider extends Component {
     return { transform: `translateX(-${step * 100}%)` };
   }
 
-  handleMenuClick = step => this.setState({ step });
+  handleMenuClick = (step) => this.setState({ step });
 
   render() {
     const { keys, step } = this.state;
@@ -28,7 +28,10 @@ class Slider extends Component {
           <div className={classes.menuContainer}>
             <div className={classes.menu}>
               {keys.map((key, i) => (
+                // eslint-disable-next-line jsx-a11y/control-has-associated-label
                 <div
+                  tabIndex={0}
+                  role="button"
                   className={classnames(i === step && classes.active, classes.menuItem)}
                   key={key}
                   onClick={() => this.handleMenuClick(i)}

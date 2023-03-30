@@ -6,11 +6,11 @@ const Skills = () => (
     <h4>SKILLS &amp; TOOLS</h4>
     <div>
       <p>Languages:</p>
-      <p>TypeScript, JavaScript, GraphQL, Ruby, HTML, CSS/SCSS, JSS</p>
+      <p>TypeScript, Golang, GraphQL, Ruby, HTML, CSS/SCSS, JSS</p>
     </div>
     <div>
       <p>Libraries &amp; Frameworks:</p>
-      <p>React, Express, Node, Storybook, Single-Spa, Ruby on Rails</p>
+      <p>React, Next, Apollo Client, Storybook, Single-Spa, Styled Components, Express, Node, Ruby on Rails</p>
     </div>
     <div>
       <p>Testing:</p>

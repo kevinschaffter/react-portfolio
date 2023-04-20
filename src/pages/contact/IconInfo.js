@@ -19,7 +19,7 @@ export const iconInfo = [
   },
   {
     icon: faFile,
-    text: 'resume',
-    link: 'https://drive.google.com/file/d/1KOdVDxRL-3poCNmohkRESncx2SSDdsjA/view?usp=sharing',
+    text: 'Resume',
+    link: 'https://drive.google.com/file/d/1dM0o_X2okABXe1g8XOQmSwHzAulvCTJm/view?usp=sharing',
   },
 ];
